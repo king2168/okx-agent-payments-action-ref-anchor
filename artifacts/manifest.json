@@ -1,0 +1,50 @@
+{
+  "action_ref": "10cae64b3ad7ec5df4cdc6b46f333e2970f3c7059301aed9c69a102720247a8d",
+  "anchor_chain": "Base mainnet (chainId 8453)",
+  "anchor_ref_bytes32": "0x10cae64b3ad7ec5df4cdc6b46f333e2970f3c7059301aed9c69a102720247a8d",
+  "anchor_registry": "0x49fEcA52bC634a9Ab773226D16619deC547794aa",
+  "envelope": {
+    "action_ref": "10cae64b3ad7ec5df4cdc6b46f333e2970f3c7059301aed9c69a102720247a8d",
+    "capability": "agent-payments-protocol.payment.pay.exact",
+    "generated_at_utc": "2026-08-20T21:30:00.000Z",
+    "hash_algo": "sha256",
+    "packet_version": "1.0",
+    "params_digest": "15b68590a4ad5d9bdfa96d4c71b563ac7e2d42666609eb4fe665a6f0b5a671a4",
+    "preimage": {
+      "action_type": "okx.agent_payments_protocol.payment.pay",
+      "agent_id": "worked-example.okx-agent-payments-action-ref-anchor",
+      "scope": "okx:agent-payments-protocol:x402:exact:network:base",
+      "timestamp": "2026-08-20T21:30:00.000Z"
+    },
+    "preimage_format": "jcs-rfc8785-v1",
+    "result_digest": "af53a1fcdfa676da879d07d06ba1a85c7bdb42bf5f7da0a8d0d68a6bd8d9e7a8"
+  },
+  "fixture_id": "okx-agent-payments-protocol-exact-pay-worked-example",
+  "jcs_payload": "{\"action_type\":\"okx.agent_payments_protocol.payment.pay\",\"agent_id\":\"worked-example.okx-agent-payments-action-ref-anchor\",\"scope\":\"okx:agent-payments-protocol:x402:exact:network:base\",\"timestamp\":\"2026-08-20T21:30:00.000Z\"}",
+  "params": {
+    "amount": "1000000",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "assetTransferMethod": "eip3009",
+    "endpoint": "onchainos payment pay --payment-id <id> --yes",
+    "network": "eip155:8453",
+    "payTo": "0x00000000000000000000000000000000BEEFEE",
+    "resource": "https://worked-example.invalid/paid-resource",
+    "scheme": "exact",
+    "x402Version": 2
+  },
+  "preimage": {
+    "action_type": "okx.agent_payments_protocol.payment.pay",
+    "agent_id": "worked-example.okx-agent-payments-action-ref-anchor",
+    "scope": "okx:agent-payments-protocol:x402:exact:network:base",
+    "timestamp": "2026-08-20T21:30:00.000Z"
+  },
+  "provenance": "Synthetic worked example. Request/result shapes modeled on okx/onchainos-skills' own public source (skills/okx-agent-payments-protocol/SKILL.md and references/accepts-schemes.md): the accepts[] 402 challenge entry (scheme, network, asset, payTo, amount) and the documented exact-scheme settlement result (status, txHash, amount, payer). NOT captured from a running agent session, a real OKX-hosted 402 resource, or any real on-chain settlement. payTo, asset holder addresses, and txHash are synthetic placeholders. No claim that OKX or onchainos-skills emits action_ref today, and no claim of integration, adoption, or endorsement by OKX.",
+  "result": {
+    "amount": "1000000",
+    "payer": "0x00000000000000000000000000000000C0FFEE",
+    "scheme": "exact",
+    "status": "success",
+    "txHash": "0x0000000000000000000000000000000000000000000000000000000000BEEF"
+  },
+  "spec": "action-ref-v1 (argentum-core, docs/spec/action-ref.md)"
+}
