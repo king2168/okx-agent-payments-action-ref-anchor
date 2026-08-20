@@ -1,0 +1,13 @@
+{
+  "description": "On-chain anchor of the action_ref produced in this repo.",
+  "provenance_disclaimer": "The anchored ref is action_ref derived per action-ref-v1 for a synthetic OKX Agent Payments Protocol exact-scheme payment settlement modeled on okx/onchainos-skills' public source (skills/okx-agent-payments-protocol/SKILL.md and references/accepts-schemes.md). NOT produced by a live agent session or a real OKX-hosted 402 resource; no adoption or endorsement by OKX is implied.",
+  "anchor_ref_bytes32": "0x10cae64b3ad7ec5df4cdc6b46f333e2970f3c7059301aed9c69a102720247a8d",
+  "registry": "0x49fEcA52bC634a9Ab773226D16619deC547794aa",
+  "chain": "Base mainnet (chainId 8453)",
+  "function": "anchor(bytes32)",
+  "event": "Anchored(bytes32 indexed ref, address indexed anchoredBy, uint256 timestamp)",
+  "tx": "0x3c5ddb7d1757c72f9949362ae1c3e574de8abfafc1cd72938bd12143dcd7d63d",
+  "block": 50236856,
+  "anchored_by": "Rama operator wallet",
+  "anchored_at_utc": "2026-08-20T21:57:39Z"
+}

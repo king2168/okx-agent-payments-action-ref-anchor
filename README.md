@@ -123,7 +123,8 @@ python3 verifier/verify.py
   address on Base 8453, Arbitrum One 42161, Ink 57073).
 - **Function:** `anchor(bytes32 ref)` — permissionless, no owner/roles/funds.
 - **Event:** `Anchored(bytes32 indexed ref, address indexed anchoredBy, uint256 timestamp)`.
-- Tx `<TX_HASH>`, block `<BLOCK>`, Base mainnet. `artifacts/anchor.json`
+- Tx `0x3c5ddb7d1757c72f9949362ae1c3e574de8abfafc1cd72938bd12143dcd7d63d`,
+  block `50236856`, Base mainnet. `artifacts/anchor.json`
   has the full record; `verifier/verify.py` confirms it independently
   against public RPC.
 

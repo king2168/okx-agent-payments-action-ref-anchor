@@ -35,7 +35,8 @@ provenance is fuzzy.
     `option.amount` / `option.payTo`).
 - The on-chain anchor is a real transaction on Base mainnet, sent via
   `giskard-signer` (owner wallet, policy-gated, key never touched by this
-  session): tx `<TX_HASH>`, block `<BLOCK>`, `status: 1 (success)`. The
+  session): tx `0x3c5ddb7d1757c72f9949362ae1c3e574de8abfafc1cd72938bd12143dcd7d63d`,
+  block `50236856`, `status: 1 (success)`. The
   tx hash and block are independently checkable by anyone via
   `verifier/verify.py`, which was run and produced `ALL CHECKS PASS`
   against public Base RPC (`mainnet.base.org`) after the transaction
